@@ -2,6 +2,12 @@ source 'https://rubygems.org'
 
 ruby '2.1.2'
 gem 'rails_12factor', group: :production
+
+group :development do
+  gem "better_errors"
+  gem "binding_of_caller"
+  gem 'meta_request'
+end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
 # Use postgresql as the database for Active Record
