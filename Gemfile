@@ -3,6 +3,10 @@ source 'https://rubygems.org'
 ruby '2.1.2'
 gem 'rails_12factor', group: :production
 
+gem 'bootstrap-sass', '~> 3.3.1'
+gem 'font-awesome-sass', '~> 4.2.0'
+gem 'bootstrap_form'
+
 group :development do
   gem "better_errors"
   gem "binding_of_caller"
