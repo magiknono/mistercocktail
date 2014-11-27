@@ -1,1 +1,14 @@
 <h1>doses#new</h1>
+<div class="container">
+  <div class="row">
+    <div class="text-center">
+
+<%= bootstrap_form_for([@cocktail, @dose], layout: :horizontal, label_col: "col-sm-2", control_col: "col-sm-5") do |f| %>
+  <%= f.text_field :amount %>
+
+  <%= collection_select :dose, :ingredient_id, @ingredients, :id, :name %>
+  <%= f.submit "Create Dose", class: "btn btn-success" %>
+<% end %>
+</div>
+</div>
+</div>
