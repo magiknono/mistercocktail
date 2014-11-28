@@ -4,7 +4,7 @@
 <h1>cocktails#index.html</h1>
 
 <% @cocktails.each do |c| %>
-  <p><%= c.name %></p>
+  <p><%= link_to c.name, cocktail_path(c)  %></p>
 <% end %>
 </div>
 </div>
